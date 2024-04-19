@@ -28,8 +28,9 @@ body {
   flex-direction: column;
   width: 327px;
   height: 512px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 8px;
+  box-shadow: 1px 22px 15px -1px #DEDEDE;
 }
 
 .drawers {
@@ -66,34 +67,43 @@ body {
   width: 327px;
   height: 66px;
   border-radius: 0 0 10px 10px;
-  margin: 39px 0 0 0;
+  margin: 32px 0 0 0;
   /* border: 2px solid black; */
 }
 
 /* FOR JAVASCRIPT BOILERPLATE */
 
 #sig-section-event {
+  visibility: hidden;
   display: flex;
+  position: absolute;
   justify-content: space-around;
   width: 327px;
   height: 66px;
   border-radius: 0 0 10px 10px;
-  margin: 39px 0 0 0;
+  margin: 400px 0 0 0;
   background-color: #48556A;
   /* border: 2px solid black; */
 }
 
 /* FOR JAVASCRIPT BOILERPLATE */
 
-.share-row {
+#share-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 175px;
   height: 20px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  margin: 22px 0 0 0;
 }
 
 #share-row h2 {
   font-family: 'Manrope', sans-serif;
   font-size: 13px;
+  letter-spacing: 5px;
+  color: #9DAEC2;
+  font-weight: 200;
 }
 
 /* ------------------------------- */
@@ -121,7 +131,12 @@ body {
 .share {
   width: 32px;
   height: 32px;
-  margin: 11px 40px 0 -15px;
+  margin: 9px 40px 0 -15px;
+}
+
+#dark-share {
+  display: inline-block;
+  margin: 14px 18px 0 0;
 }
 
 .michelle {
@@ -135,6 +150,13 @@ body {
   margin-top: 35px;
 }
 
+/* Hover Animations */
+
 .share:hover {
+  cursor: pointer;
+}
+
+.pintrest-icon:hover,
+.twitter-icon:hover {
   cursor: pointer;
 }
