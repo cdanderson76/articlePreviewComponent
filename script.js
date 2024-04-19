@@ -1,5 +1,4 @@
 let display = true;
-let cont = true
 
 const lightShareBtn = document.getElementById('share-btn');
 const darkShareBtn = document.getElementById('dark-share');
@@ -15,8 +14,8 @@ lightShareBtn.addEventListener('click', function() {
 })      
  
 darkShareBtn.addEventListener('click', function() {
-    nameDate.style.visibility = 'visible';
-    profilePic.style.visibility = 'visible';
-    sigSect.style.visibility = 'hidden';
+  nameDate.style.visibility = 'visible';
+  profilePic.style.visibility = 'visible';
+  sigSect.style.visibility = 'hidden';
 })
 
